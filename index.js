@@ -29,7 +29,7 @@ const transporter = nodemailer.createTransport({
       await transporter.sendMail({
         from: `${email}`,
         to: process.env.EMAIL_USER,
-        subject: `New Contact Form Message from ${name}`,
+        subject: `New Contact Form Message from ${name} ans ${email}`,
         text: message,
       });
   
